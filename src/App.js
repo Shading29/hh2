@@ -18,10 +18,10 @@ class App extends React.Component{
         return (
             <div className="container">
                 <Nav navs={navs}/>
-                    <Route path="/" exact component={Homepage}/>
-                    <Route path="/registration" component={ !this.props.isLogged
-                                                            ? AuthContainer
-                                                            : null} />
+                <Route path="/" exact component={Homepage}/>
+                <Route path="/registration" component={ !this.props.isLogged
+                                                        ? AuthContainer
+                                                        : null} />
             </div>
         );
     }
