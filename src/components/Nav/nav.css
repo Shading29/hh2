@@ -1,0 +1,14 @@
+ul {
+  margin-top: 30px;
+  list-style: none;
+  font-family: sans-serif;
+  display: flex;
+}
+ul li {
+  margin-right: 15px;
+}
+ul li:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=nav.css.map */
