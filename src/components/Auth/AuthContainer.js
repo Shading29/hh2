@@ -8,15 +8,23 @@ class AuthContainer extends React.Component {
 
 
     render() {
+
+        const {setLoginInput,
+                setPasswordInput,
+                authUser,
+                registerUser,
+                login,
+                password} = this.props
+
         return (
             <React.Fragment>
                 <Auth
-                    setLoginInput={this.props.setLoginInput}
-                    setPasswordInput={this.props.setPasswordInput}
-                    registerUser={this.props.authUser}
-                    authUser={this.props.authUser}
-                    login={this.props.login}
-                    password={this.props.password}
+                    setLoginInput={setLoginInput}
+                    setPasswordInput={setPasswordInput}
+                    registerUser={registerUser}
+                    authUser={authUser}
+                    login={login}
+                    password={password}
                 />
             </React.Fragment>
         )

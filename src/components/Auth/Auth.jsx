@@ -4,9 +4,9 @@ export default class Auth extends React.Component {
 
 
 
-    onRegister = event => {
+    onAuth = event => {
         event.preventDefault()
-        this.props.registerUser(this.props.login, this.props.password)
+        this.props.authUser(this.props.login, this.props.password)
     }
 
     render() {
@@ -34,7 +34,7 @@ export default class Auth extends React.Component {
                     </div>
                     <button type="button"
                             className="btn btn-primary"
-                            onClick={this.onRegister}
+                            onClick={this.onAuth}
                     >
                         Войти
                     </button>
