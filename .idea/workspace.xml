@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c9b3a08-36f2-4776-9283-5598abaa6f73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UsersTable/UsersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UsersTable/UsersTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UsersTable/UsersTableContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UsersTable/UsersTableContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/UsersTable/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/UsersTable/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/UsersTable/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/UsersTable/reducers.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,7 +65,7 @@
       <workItem from="1576525693663" duration="4833000" />
       <workItem from="1576577554113" duration="20415000" />
       <workItem from="1576613142909" duration="2486000" />
-      <workItem from="1576665067136" duration="15654000" />
+      <workItem from="1576665067136" duration="15912000" />
     </task>
     <servers />
   </component>

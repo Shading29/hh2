@@ -6,7 +6,7 @@ import {
 const defaultState = {
     users: [],
     isLoading: true,
-    search: '2',
+    search: '',
 }
 
 
