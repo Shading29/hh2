@@ -6,7 +6,6 @@ import AuthContainer from "./components/Auth/AuthContainer";
 import Nav from "./components/Nav/Nav"
 import { Route } from "react-router-dom"
 import Homepage from "./components/Homepage/Homepage";
-import {Loader} from "./components/UsersTable/loader/Loader";
 import UsersTableContainer from "./components/UsersTable/UsersTableContainer";
 
 const navs = {
@@ -27,9 +26,7 @@ class App extends React.Component{
                 <Route path="/registration" component={ !this.props.isLogged
                                                         ? AuthContainer
                                                         : null} />
-                <Route path="/users"  component={   this.props.isLoading
-                                                    ? UsersTableContainer // Должен быть лоадер
-                                                    : UsersTableContainer } />
+                <Route path="/users"  component={ UsersTableContainer } />
             </div>
         );
     }
@@ -38,7 +35,6 @@ class App extends React.Component{
 const mapStateToProps = state => {
     return {
         isLogged: state.auth.isLogged,
-        isLoading: state.userstable.isLoading
     }
 }
 const mapDispatchToProps = {

@@ -1,7 +1,8 @@
 import React from "react"
 import { connect } from "react-redux"
 import UsersTable from "./UsersTable";
-import { loadUsers } from "../../store/UsersTable/actions";
+import { loadUsers, filterUsers } from "../../store/UsersTable/actions";
+import {Loader} from "./loader/Loader";
 
 
 class UsersTableContainer extends React.Component {
@@ -13,13 +14,15 @@ class UsersTableContainer extends React.Component {
     }
 
     render() {
-        const { users, loadUsers } = this.props
+        const { users, filterUsers } = this.props
         return (
             <React.Fragment>
-                <UsersTable
-                    users={users}
-                    loadUsers={loadUsers}
-                />
+                { this.props.isLoading
+                ? <Loader/>
+                : <UsersTable
+                        users={users}
+                        filterUsers={filterUsers}
+                    /> }
             </React.Fragment>
         )
     }
@@ -27,12 +30,14 @@ class UsersTableContainer extends React.Component {
 
 const setStateToProps = state => {
     return {
-        users: state.userstable.users
+        users: state.userstable.users,
+        isLoading: state.userstable.isLoading
     }
 }
 
 const setDispatchToProps = {
-    loadUsers
+    loadUsers,
+    filterUsers
 }
 
 export default connect(setStateToProps, setDispatchToProps)(UsersTableContainer)
