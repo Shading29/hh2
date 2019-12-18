@@ -6,14 +6,19 @@ import AuthContainer from "./components/Auth/AuthContainer";
 import Nav from "./components/Nav/Nav"
 import { Route } from "react-router-dom"
 import Homepage from "./components/Homepage/Homepage";
+import {Loader} from "./components/UsersTable/loader/Loader";
+import UsersTableContainer from "./components/UsersTable/UsersTableContainer";
 
 const navs = {
     Home: "/",
     Registration: "/registration",
-    Info: "/info"
+    Users: "/users"
 }
 
+
+
 class App extends React.Component{
+
     render() {
         return (
             <div className="container">
@@ -22,6 +27,9 @@ class App extends React.Component{
                 <Route path="/registration" component={ !this.props.isLogged
                                                         ? AuthContainer
                                                         : null} />
+                <Route path="/users"  component={   this.props.isLoading
+                                                    ? UsersTableContainer // Должен быть лоадер
+                                                    : UsersTableContainer } />
             </div>
         );
     }
@@ -29,10 +37,16 @@ class App extends React.Component{
 
 const mapStateToProps = state => {
     return {
-        isLogged: state.auth.isLogged
+        isLogged: state.auth.isLogged,
+        isLoading: state.userstable.isLoading
     }
+}
+const mapDispatchToProps = {
+
 }
 
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+
 

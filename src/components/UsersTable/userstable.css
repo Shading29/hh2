@@ -1,0 +1,19 @@
+table {
+  text-align: center;
+  border: 1px dashed grey;
+  width: 100%;
+}
+table th {
+  border: 1px dashed grey;
+}
+table td {
+  border: 1px dashed grey;
+}
+table p {
+  font-weight: bold;
+}
+table p .text {
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=userstable.css.map */

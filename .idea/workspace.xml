@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c9b3a08-36f2-4776-9283-5598abaa6f73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/UsersTable/UsersTable.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UsersTable/UsersTableContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UsersTable/loader/Loader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UsersTable/loader/loader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UsersTable/userstable.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/UsersTable/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/UsersTable/reducers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Sass File" />
         <option value="JavaScript File" />
+        <option value="Sass File" />
       </list>
     </option>
   </component>
@@ -27,13 +37,15 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/UsersTable/loader" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\16.12.19\defaultReactApp\src\components\UsersTable\loader" />
+      <recent name="D:\Projects\16.12.19\defaultReactApp\src\store\UsersTable" />
       <recent name="D:\Projects\16.12.19\defaultReactApp\src\store\Auth" />
     </key>
   </component>
@@ -62,7 +74,9 @@
       <workItem from="1575840776151" duration="543000" />
       <workItem from="1576497426522" duration="2119000" />
       <workItem from="1576525693663" duration="4833000" />
-      <workItem from="1576577554113" duration="19127000" />
+      <workItem from="1576577554113" duration="20415000" />
+      <workItem from="1576613142909" duration="2486000" />
+      <workItem from="1576665067136" duration="7851000" />
     </task>
     <servers />
   </component>

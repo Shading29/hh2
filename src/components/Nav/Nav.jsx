@@ -8,7 +8,6 @@ export default class Nav extends React.Component {
         const { navs } = this.props
         return (
             <ul>
-
                 { Object.keys(navs).map(nav => {
                             return (
                                 <li>
