@@ -35,25 +35,16 @@ export const authReducer = (state = defaultState, action) => {
                 }
 
             case AUTH_AUTHORIZATION_USER:
-                const { users } = state
-                for(let i = 0; i < state.users.length; i++)
-                {
-                    if(users[i].login === action.payload[0] && users[i].password === action.payload[1]) {
+                const {users} = state
+                for (let i = 0; i < state.users.length; i++) {
+                    if (users[i].login === action.payload[0] && users[i].password === action.payload[1]) {
                         return {
                             ...state,
                             isLogged: true
                         }
                     }
                 }
-/*
-                state.users.forEach(user => {
-                    if(user.login === action.payload[0] && user.password === action.payload[1]) {
-                        return {
-                            ...state,
-                            isLogged: true
-                        }
-                    } console.log(state)
-                },[authReducer])*/
+            default: return state;
+
         }
-    return state
 }

@@ -5,11 +5,12 @@ export default class UsersTable extends React.Component {
 
     render() {
 
-        const { users, filterUsers } = this.props
+        const { users, filterUsers, searchValue } = this.props
 
         return (
             <React.Fragment>
                 <input
+                    value={searchValue}
                     onChange={event => filterUsers(event.target.value)}
                 />
                     <table>

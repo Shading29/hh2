@@ -12,19 +12,23 @@ const defaultState = {
 
 
 export const userstableReducer = (state = defaultState, action) => {
+
         const { search } = state
+
+        const filteredUsers = data => {
+            return data.filter(user => {
+                    return user.name.toUpperCase().includes(search.toUpperCase())
+                        || user.surname.toUpperCase().includes(search.toUpperCase())
+                        || user.city.toUpperCase().includes(search.toUpperCase())
+                        || user.lastloginfromip.toUpperCase().includes(search.toUpperCase())
+                })
+
+        }
         switch(action.type) {
             case USERSTABLE_LOAD_USERS:
                 return {
                     ...state,
-                    users: !search
-                        ? action.payload
-                        : action.payload.filter(user => {
-                            return user.name.toUpperCase().includes(search.toUpperCase())
-                                || user.surname.toUpperCase().includes(search.toUpperCase())
-                                || user.city.toUpperCase().includes(search.toUpperCase())
-                                || user.lastloginfromip.toUpperCase().includes(search.toUpperCase())
-                        }),
+                    users: filteredUsers(action.payload),
                     isLoading: false
                 }
             case USERTABLE_FILTER_USERS:
@@ -32,10 +36,8 @@ export const userstableReducer = (state = defaultState, action) => {
                     ...state,
                     search: action.payload
                 }
+            default: return state
         }
-    return state
-}
-
-const filteredData = (data) => {
 
 }
+

@@ -8,13 +8,13 @@ import {Loader} from "./loader/Loader";
 class UsersTableContainer extends React.Component {
 
     async componentDidMount() {
-        const response = await fetch("http://www.filltext.com/?rows=500&id={index}&name={firstName}&surname={lastName}&city={city}&fullname={firstName}~{lastName}&lastloginfromip={ip}")
+        const response = await fetch("http://www.filltext.com/?rows=50&id={index}&name={firstName}&surname={lastName}&city={city}&fullname={firstName}~{lastName}&lastloginfromip={ip}")
         const data = await response.json()
         this.props.loadUsers(data)
     }
 
     render() {
-        const { users, filterUsers } = this.props
+        const { users, filterUsers, searchValue } = this.props
         return (
             <React.Fragment>
                 { this.props.isLoading
@@ -22,6 +22,7 @@ class UsersTableContainer extends React.Component {
                 : <UsersTable
                         users={users}
                         filterUsers={filterUsers}
+                        searchValue={searchValue}
                     /> }
             </React.Fragment>
         )
@@ -31,7 +32,8 @@ class UsersTableContainer extends React.Component {
 const setStateToProps = state => {
     return {
         users: state.userstable.users,
-        isLoading: state.userstable.isLoading
+        isLoading: state.userstable.isLoading,
+        searchValue: state.userstable.search
     }
 }
 

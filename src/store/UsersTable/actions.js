@@ -10,7 +10,7 @@ export const loadUsers = payload => ({
 
 export const filterUsers = search => ({
     type: USERTABLE_FILTER_USERS,
-    payload: search
+    payload: search,
 })
 
 
