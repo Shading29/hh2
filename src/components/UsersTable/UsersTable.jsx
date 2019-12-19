@@ -10,8 +10,8 @@ export default class UsersTable extends React.Component {
         return (
             <React.Fragment>
                 <input
-                    value={searchValue}
                     onChange={event => filterUsers(event.target.value)}
+                    value={searchValue}
                 />
                     <table>
                         <thead>

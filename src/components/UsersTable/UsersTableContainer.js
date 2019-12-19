@@ -13,14 +13,35 @@ class UsersTableContainer extends React.Component {
         this.props.loadUsers(data)
     }
 
+
+    filteredUsers = () => {
+        const {users, search} = this.props
+        if(!search) {
+            return users
+        } else {
+            return users.filter(user => {
+                const fullname = `${user.name} ${user.surname}`
+                return fullname.toUpperCase().includes(search.toUpperCase())
+/*                  user.name.toUpperCase().includes(search.toUpperCase())
+                    || user.surname.toUpperCase().includes(search.toUpperCase())
+                    || user.city.toUpperCase().includes(search.toUpperCase())
+                    || user.lastloginfromip.toUpperCase().includes(search.toUpperCase())*/
+            })
+        }
+    }
+
+
+
     render() {
         const { users, filterUsers, searchValue } = this.props
+
+
         return (
             <React.Fragment>
                 { this.props.isLoading
                 ? <Loader/>
                 : <UsersTable
-                        users={users}
+                        users={this.filteredUsers()}
                         filterUsers={filterUsers}
                         searchValue={searchValue}
                     /> }
@@ -33,7 +54,7 @@ const setStateToProps = state => {
     return {
         users: state.userstable.users,
         isLoading: state.userstable.isLoading,
-        searchValue: state.userstable.search
+        search: state.userstable.search
     }
 }
 
