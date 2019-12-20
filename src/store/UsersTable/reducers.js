@@ -1,5 +1,5 @@
 import {
-    USERSTABLE_LOAD_USERS,
+    USERSTABLE_LOAD_USERS, USERTABLE_CHANGE_SORTCOLUMN, USERTABLE_CHANGE_SORTWAY,
     USERTABLE_FILTER_USERS
 } from "./actions";
 
@@ -7,6 +7,8 @@ const defaultState = {
     users: [],
     isLoading: true,
     search: '',
+    sortway: 'asc',
+    sortcolumn: "name"
 }
 
 
@@ -25,6 +27,17 @@ export const userstableReducer = (state = defaultState, action) => {
                     ...state,
                     search: action.payload,
                     // users: filteredUsers()
+                }
+/*            case USERTABLE_CHANGE_SORTWAY:
+                return {
+                    ...state,
+                    sortway: state.sortway === "asc" ? "desc" : "asc"
+                }*/
+            case USERTABLE_CHANGE_SORTCOLUMN:
+                return {
+                    ...state,
+                    sortcolumn: action.payload,
+                    sortway: state.sortway === "asc" ? "desc" : "asc"
                 }
             default: return state
         }

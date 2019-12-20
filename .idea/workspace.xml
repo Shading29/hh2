@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0c9b3a08-36f2-4776-9283-5598abaa6f73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UsersTable/UsersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UsersTable/UsersTable.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UsersTable/UsersTableContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UsersTable/UsersTableContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/UsersTable/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/UsersTable/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/UsersTable/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/UsersTable/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +72,8 @@
       <workItem from="1576577554113" duration="20415000" />
       <workItem from="1576613142909" duration="2486000" />
       <workItem from="1576665067136" duration="28013000" />
-      <workItem from="1576753059770" duration="2132000" />
+      <workItem from="1576753059770" duration="5672000" />
+      <workItem from="1576842326423" duration="2446000" />
     </task>
     <servers />
   </component>

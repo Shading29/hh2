@@ -5,7 +5,7 @@ export default class UsersTable extends React.Component {
 
     render() {
 
-        const { users, filterUsers, searchValue } = this.props
+        const { users, filterUsers, searchValue, changeSortColumn } = this.props
 
         return (
             <React.Fragment>
@@ -16,10 +16,10 @@ export default class UsersTable extends React.Component {
                     <table>
                         <thead>
                             <tr>
-                                <th>Имя</th>
-                                <th>Фамилия</th>
-                                <th>Город</th>
-                                <th>IP</th>
+                                <th onClick={() => changeSortColumn("name")}>Имя</th>
+                                <th onClick={() => changeSortColumn("surname")}>Фамилия</th>
+                                <th onClick={() => changeSortColumn("city")}>Город</th>
+                                <th onClick={() => changeSortColumn("lastloginfromip")}>IP</th>
                             </tr>
                         </thead>
                         {users.map(user => {

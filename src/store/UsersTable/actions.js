@@ -1,5 +1,7 @@
 export const USERSTABLE_LOAD_USERS = 'USERSTABLE_LOAD_USERS'
 export const USERTABLE_FILTER_USERS = 'USERTABLE_FILTER_USERS'
+// export const USERTABLE_CHANGE_SORTWAY = 'USERTABLE_CHANGE_SORTWAY'
+export const USERTABLE_CHANGE_SORTCOLUMN = 'USERTABLE_CHANGE_SORTCOLUMN'
 
 
 
@@ -11,6 +13,15 @@ export const loadUsers = payload => ({
 export const filterUsers = search => ({
     type: USERTABLE_FILTER_USERS,
     payload: search,
+})
+
+/*export const changeSortWay = () => ({
+    type: USERTABLE_CHANGE_SORTWAY,
+})*/
+
+export const changeSortColumn = sortcolumn => ({
+    type: USERTABLE_CHANGE_SORTCOLUMN,
+    payload: sortcolumn,
 })
 
 

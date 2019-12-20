@@ -1,8 +1,9 @@
 import React from "react"
 import { connect } from "react-redux"
 import UsersTable from "./UsersTable";
-import { loadUsers, filterUsers } from "../../store/UsersTable/actions";
+import { loadUsers, filterUsers, changeSortColumn } from "../../store/UsersTable/actions";
 import {Loader} from "./loader/Loader";
+import _ from "lodash"
 
 
 class UsersTableContainer extends React.Component {
@@ -33,17 +34,19 @@ class UsersTableContainer extends React.Component {
 
 
     render() {
-        const { users, filterUsers, searchValue } = this.props
+        const {filterUsers, searchValue, changeSortColumn, sortcolumn, sortway } = this.props
 
-
+        const displayUsers = _.orderBy(this.filteredUsers(), sortcolumn, sortway )
         return (
             <React.Fragment>
                 { this.props.isLoading
                 ? <Loader/>
                 : <UsersTable
-                        users={this.filteredUsers()}
+                        users={displayUsers}
                         filterUsers={filterUsers}
                         searchValue={searchValue}
+                        // changeSortWay={changeSortWay}
+                        changeSortColumn={changeSortColumn}
                     /> }
             </React.Fragment>
         )
@@ -54,13 +57,17 @@ const setStateToProps = state => {
     return {
         users: state.userstable.users,
         isLoading: state.userstable.isLoading,
-        search: state.userstable.search
+        search: state.userstable.search,
+        sortway: state.userstable.sortway,
+        sortcolumn: state.userstable.sortcolumn,
     }
 }
 
 const setDispatchToProps = {
     loadUsers,
-    filterUsers
+    filterUsers,
+    changeSortColumn,
+    // changeSortWay,
 }
 
 export default connect(setStateToProps, setDispatchToProps)(UsersTableContainer)
