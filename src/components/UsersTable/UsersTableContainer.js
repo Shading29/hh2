@@ -54,8 +54,12 @@ class UsersTableContainer extends React.Component {
 
         const displayUsers = _.orderBy(this.filteredUsers(), sortcolumn, sortway )
 
-
-        const chunkedUsers = _.chunk(displayUsers, countUsersPerPage)[currentpage]
+        /*Если не найдено ни 1 пользователя по фильтру, он пытается поделить пустой массив на чанки, что вызывает ошибку, пока что решил это так, больше в голову ничего не пришло) */
+        let chunkedUsers = ''
+        displayUsers.length !== 0
+            ? chunkedUsers = _.chunk(displayUsers, countUsersPerPage)[currentpage]
+            : chunkedUsers = displayUsers
+        
 
         return (
             <React.Fragment>
@@ -68,6 +72,7 @@ class UsersTableContainer extends React.Component {
                         // changeSortWay={changeSortWay}
                         changeSortColumn={changeSortColumn}
                     /> }
+
                 {   displayUsers.length > countUsersPerPage
                     ?   <ReactPaginate
                         previousLabel={'Назад'}

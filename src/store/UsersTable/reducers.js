@@ -13,7 +13,7 @@ const defaultState = {
     search: '',
     sortway: 'asc',
     sortcolumn: "name",
-    countUsersPerPage: 30,
+    countUsersPerPage: 25, // Количество пользователей на одной странице
     currentpage: '0'
 }
 
