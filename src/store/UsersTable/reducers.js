@@ -1,6 +1,10 @@
 import {
-    USERSTABLE_LOAD_USERS, USERTABLE_CHANGE_SORTCOLUMN, USERTABLE_CHANGE_SORTWAY,
-    USERTABLE_FILTER_USERS
+    USERSTABLE_LOAD_USERS,
+    USERTABLE_CHANGE_SORTCOLUMN,
+    USERTABLE_FILTER_USERS,
+    USERTABLE_CHANGE_CURRENTPAGE
+    // USERTABLE_CHANGE_SORTWAY,
+
 } from "./actions";
 
 const defaultState = {
@@ -8,7 +12,9 @@ const defaultState = {
     isLoading: true,
     search: '',
     sortway: 'asc',
-    sortcolumn: "name"
+    sortcolumn: "name",
+    countUsersPerPage: 30,
+    currentpage: '0'
 }
 
 
@@ -26,6 +32,7 @@ export const userstableReducer = (state = defaultState, action) => {
                 return {
                     ...state,
                     search: action.payload,
+                    currentpage: 0
                     // users: filteredUsers()
                 }
 /*            case USERTABLE_CHANGE_SORTWAY:
@@ -38,6 +45,11 @@ export const userstableReducer = (state = defaultState, action) => {
                     ...state,
                     sortcolumn: action.payload,
                     sortway: state.sortway === "asc" ? "desc" : "asc"
+                }
+            case USERTABLE_CHANGE_CURRENTPAGE:
+                return {
+                    ...state,
+                    currentpage: action.payload,
                 }
             default: return state
         }
