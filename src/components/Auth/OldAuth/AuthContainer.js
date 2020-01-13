@@ -12,6 +12,7 @@ class AuthContainer extends React.Component {
         const {setLoginInput,
                 setPasswordInput,
                 authUser,
+                authUser2,
                 registerUser,
                 login,
                 password} = this.props
@@ -25,6 +26,7 @@ class AuthContainer extends React.Component {
                     authUser={authUser}
                     login={login}
                     password={password}
+                    authUser2={authUser2}
                 />
             </React.Fragment>
         )
@@ -42,7 +44,7 @@ const setDispatchToProps = {
     setLoginInput,
     setPasswordInput,
     registerUser,
-    authUser
+    authUser,
 }
 
 export default connect(setStateToProps, setDispatchToProps)(AuthContainer)

@@ -6,7 +6,7 @@ export default class Auth extends React.Component {
 
     onAuth = event => {
         event.preventDefault()
-        this.props.authUser(this.props.login, this.props.password)
+        this.props.authUser2(this.props.login, this.props.password)
     }
 
     render() {
