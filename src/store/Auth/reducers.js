@@ -3,11 +3,6 @@ import {
 } from "./actions";
 
 const defaultState = {
-    users: [
-        {login: "admin", password: "admin"},
-        ],
-    login: '',
-    password: '',
     isLogged: false,
     currentUserID: ''
 }

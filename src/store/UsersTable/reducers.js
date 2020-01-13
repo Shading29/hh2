@@ -3,7 +3,6 @@ import {
     USERTABLE_CHANGE_SORTCOLUMN,
     USERTABLE_FILTER_USERS,
     USERTABLE_CHANGE_CURRENTPAGE
-    // USERTABLE_CHANGE_SORTWAY,
 
 } from "./actions";
 
@@ -35,11 +34,6 @@ export const userstableReducer = (state = defaultState, action) => {
                     currentpage: 0
                     // users: filteredUsers()
                 }
-/*            case USERTABLE_CHANGE_SORTWAY:
-                return {
-                    ...state,
-                    sortway: state.sortway === "asc" ? "desc" : "asc"
-                }*/
             case USERTABLE_CHANGE_SORTCOLUMN:
                 return {
                     ...state,
