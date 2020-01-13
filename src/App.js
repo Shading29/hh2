@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import "./css/style.css"
 import { connect } from "react-redux"
-import AuthContainer from "./components/Auth/AuthContainer";
 import Nav from "./components/Nav/Nav"
 import { Route } from "react-router-dom"
 import Homepage from "./components/Homepage/Homepage";
 import UsersTableContainer from "./components/UsersTable/UsersTableContainer";
+import ReduxAuthForm from "./components/Auth/ReduxAuthForm";
 
 const navs = {
     Home: "/",
@@ -24,7 +24,7 @@ class App extends React.Component{
                 <Nav navs={navs}/>
                 <Route path="/" exact component={Homepage}/>
                 <Route path="/registration" component={ !this.props.isLogged
-                                                        ? AuthContainer
+                                                        ? ReduxAuthForm
                                                         : null} />
                 <Route path="/users"  component={ UsersTableContainer } />
             </div>

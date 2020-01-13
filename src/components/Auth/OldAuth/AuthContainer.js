@@ -1,7 +1,7 @@
 import React from "react"
 import Auth from "./Auth"
 import { connect } from "react-redux"
-import {setLoginInput, setPasswordInput, registerUser, authUser} from "../../store/Auth/actions";
+import {setLoginInput, setPasswordInput, registerUser, authUser} from "../../../store/Auth/actions";
 
 
 class AuthContainer extends React.Component {

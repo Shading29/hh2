@@ -2,15 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c9b3a08-36f2-4776-9283-5598abaa6f73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Auth/ReduxAuthForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UsersTable/UsersTableContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UsersTable/UsersTableContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/UsersTable/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/UsersTable/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/Auth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/OldAuth/Auth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/AuthContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/OldAuth/AuthContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/auth.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/auth.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/auth.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/ReduxAuth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/Auth/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Auth/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/Auth/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Auth/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="hh2" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,32 +38,47 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Shading29/hh2" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1UiYEveFWB8aHpSas2rZsfrB3We" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\Shade\AppData\Local\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Shade\Desktop\Мусор\hh\hh2\src\components\Auth\OldAuth" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\16.12.19\defaultReactApp\src\components\UsersTable\loader" />
       <recent name="D:\Projects\16.12.19\defaultReactApp\src\store\UsersTable" />
       <recent name="D:\Projects\16.12.19\defaultReactApp\src\store\Auth" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -70,6 +100,7 @@
       <workItem from="1576665067136" duration="28013000" />
       <workItem from="1576753059770" duration="5672000" />
       <workItem from="1576842326423" duration="6484000" />
+      <workItem from="1578909368307" duration="6656000" />
     </task>
     <servers />
   </component>
@@ -88,5 +119,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1837" height="295" key="GridCell.Tab.0.bottom" timestamp="1578916032008">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1837" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1854.0.1854.1080@62.0.1858.1080" timestamp="1578916032008" />
+    <state width="1837" height="295" key="GridCell.Tab.0.center" timestamp="1578916032008">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1837" height="295" key="GridCell.Tab.0.center/62.0.1858.1080/-1854.0.1854.1080@62.0.1858.1080" timestamp="1578916032008" />
+    <state width="1837" height="295" key="GridCell.Tab.0.left" timestamp="1578916032008">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1837" height="295" key="GridCell.Tab.0.left/62.0.1858.1080/-1854.0.1854.1080@62.0.1858.1080" timestamp="1578916032008" />
+    <state width="1837" height="295" key="GridCell.Tab.0.right" timestamp="1578916032008">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1837" height="295" key="GridCell.Tab.0.right/62.0.1858.1080/-1854.0.1854.1080@62.0.1858.1080" timestamp="1578916032008" />
   </component>
 </project>
